@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Hello, {{ user.username }}</h1>
+  {% for item in forloop %}
+  <div>
+    <p>Name: {{ item.name }}</p>
+    <p>value: {{ item.value }}</p>
+  </div>
+  {% endfor %}
+  <h1>{{ sk }}</h1>
+{% endblock content %} 
